@@ -1,11 +1,11 @@
-import "./Login.scss";
+import "./Portal.scss";
 import React from 'react';
 import { Link } from 'react-router-dom';
 import pilot from '../../assets/icons/pilot_icon.svg';
 import client from '../../assets/icons/client_icon.svg';
 import background from '../../assets/images/login-background.mp4';
 
-function Login() {
+function Portal() {
     return (
         <main className="login">
             <div className="video-wrapper">
@@ -31,4 +31,4 @@ function Login() {
     );
 }
 
-export default Login;
+export default Portal;
