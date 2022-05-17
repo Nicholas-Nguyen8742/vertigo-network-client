@@ -2,7 +2,7 @@
 @use './partials/variables' as *;
 @use './partials/typography' as *;
 
-*, *::before, *::after {
+*, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
