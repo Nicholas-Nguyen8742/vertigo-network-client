@@ -1,0 +1,29 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/typography' as *;
+
+.specialty {
+    padding: 1rem;
+    padding-top: 16rem;
+    &__card {
+        border: 1px solid $Secondary-Gray;
+        box-shadow: 3px 3px 7px rgba($Primary-Gray, 0.3);
+        
+        padding: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        &__image {
+            height: 6rem;
+            align-self: center;
+        }
+        &__title {
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        &__body {
+            margin-top: .5rem;
+            text-align: center;
+            color:rgba($Primary-Gray, 0.7)
+        }
+    }
+}

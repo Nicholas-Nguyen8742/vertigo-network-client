@@ -1,0 +1,35 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/typography' as *;
+
+.hero {
+    position: relative;
+    &__tagline {
+        color: $Primary-White;
+        width: fit-content;
+        opacity: 70%;
+        display: block;
+        position: absolute;
+        transform: translateX(35%) translateY(320%);
+        margin: unset;
+        @include tablet {
+            top: 5.5em;
+            left: 12em;
+            width: fit-content;
+        }
+        &:hover {
+            opacity: unset;
+        }
+    }
+}
+
+
+// Targets the background
+canvas {
+    height: 15rem !important;
+    width: 100vw !important;
+    @include tablet {
+        height: 25rem !important;
+        width: 100vw !important;
+    }
+}
