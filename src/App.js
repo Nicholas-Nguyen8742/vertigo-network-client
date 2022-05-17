@@ -14,10 +14,10 @@ function App() {
       <Header />
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/signup" exact component={SignUp} />
-        <Route path="/login" exact component={Login} />
-        <Route path="/login/pilot" exact component={PilotPortal} />
-        <Route path="/login/client" exact component={ClientPortal} />
+        <Route path="/portal/signup" exact component={SignUp} />
+        <Route path="/portal" exact component={Login} />
+        <Route path="/portal/pilot" exact component={PilotPortal} />
+        <Route path="/portal/client" exact component={ClientPortal} />
       </Switch>
     </BrowserRouter>
   );

@@ -11,8 +11,7 @@ function Header() {
             </Link>
             <nav className='header__nav'>
                 <ul className='header__list'>
-                    <NavLink exact={true} to='/login' className="header__list-item" >Login</NavLink>
-                    <NavLink to='/signup'className="header__list-item">Sign-Up</NavLink>
+                    <NavLink exact={true} to='/portal' className="header__list-item" >Portal</NavLink>
                 </ul>
             </nav>            
         </header>
