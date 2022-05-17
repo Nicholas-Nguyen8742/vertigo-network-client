@@ -10,11 +10,11 @@ function Login() {
             <h1>Login</h1>
             <article>
                 <h2>Pilot</h2>
-                <img href={pilot} alt="Icon for pilots to login" />
+                <img src={pilot} alt="Icon for pilots to login" />
             </article>
             <article> 
                 <h2>Client</h2>
-                <img href={client} alt="Icon for clients to login"/>
+                <img src={client} alt="Icon for clients to login"/>
             </article>
         </main>
     );
