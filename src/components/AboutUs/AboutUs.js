@@ -1,5 +1,5 @@
 import './AboutUs.scss';
-import Client from '../../assets/images/logo.PNG';
+import Client from '../../assets/images/logo.png';
 import React from 'react';
 
 function AboutUs() {
