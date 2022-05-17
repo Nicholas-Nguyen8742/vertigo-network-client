@@ -7,7 +7,7 @@
     &-wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -20,6 +20,7 @@
         color: $Primary-Black;
         height: fit-content;
         width: fit-content;
+        margin: 4rem;
     }
     &__card {
         display: flex;
