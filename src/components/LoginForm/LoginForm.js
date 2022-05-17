@@ -1,6 +1,8 @@
 import './LoginForm.scss';
 import React, { Component } from 'react';
 
+
+/* Used for both Client & Pilot Portal Logins */
 class LoginForm extends Component {
     state = {
         success: false
@@ -8,7 +10,7 @@ class LoginForm extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form className="loginForm" onSubmit={this.handleSubmit}>
                 
             </form>
         );
