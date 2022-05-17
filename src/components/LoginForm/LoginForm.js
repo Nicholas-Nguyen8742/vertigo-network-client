@@ -1,7 +1,7 @@
 import './LoginForm.scss';
 import React, { Component } from 'react';
 import axios from 'axios';
-import PortalBackground from "../../components/PortalBackground/PortalBackground";
+import PortalBackground from "../PortalBackground/PortalBackground";
 import Input from '../Input/Input';
 
 
