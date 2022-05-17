@@ -3,16 +3,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import pilot from '../../assets/icons/pilot_icon.svg';
 import client from '../../assets/icons/client_icon.svg';
-import background from '../../assets/images/login-background.mp4';
+import PortalBackground from "../../components/PortalBackground/PortalBackground";
 
-function Portal() {
+export default function Portal() {
     return (
         <main className="login">
-            <div className="video-wrapper">
-                <video className="video" playsInline autoplay="autoplay" muted loop="true">
-                    <source src={background} type="video/mp4" />
-                </video>
-            </div>
+            <PortalBackground />
             <div className="login-wrapper">
                 <Link to='/portal/pilot' className="login__link">
                     <article className="login__card">
@@ -31,4 +27,4 @@ function Portal() {
     );
 }
 
-export default Portal;
+// export default Portal;

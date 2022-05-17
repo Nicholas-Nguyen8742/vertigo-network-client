@@ -1,5 +1,6 @@
 import './PilotPortal.scss'
 import React, { Component } from 'react';
+import LoginForm from '../../components/LoginForm/LoginForm';
 
 class PilotPortal extends Component {
     state = {
@@ -9,7 +10,7 @@ class PilotPortal extends Component {
     render() {
         return (
             <main>
-                
+                <LoginForm />
             </main>
         );
     }
