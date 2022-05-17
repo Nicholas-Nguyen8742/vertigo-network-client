@@ -10,7 +10,7 @@ class PilotPortal extends Component {
     render() {
         return (
             <main>
-                <LoginForm />
+                <LoginForm title="Pilot"/>
             </main>
         );
     }
