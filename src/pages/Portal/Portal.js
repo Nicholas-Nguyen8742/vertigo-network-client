@@ -5,7 +5,7 @@ import pilot from '../../assets/icons/pilot_icon.svg';
 import client from '../../assets/icons/client_icon.svg';
 import background from '../../assets/images/login-background.mp4';
 
-function Portal() {
+export default function Portal() {
     return (
         <main className="login">
             <div className="video-wrapper">
@@ -31,4 +31,4 @@ function Portal() {
     );
 }
 
-export default Portal;
+// export default Portal;
