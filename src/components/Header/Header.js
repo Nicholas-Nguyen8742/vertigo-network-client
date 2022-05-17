@@ -1,5 +1,5 @@
 import './Header.scss';
-import logo from "../../assets/images/logo.svg";
+import logo from "../../assets/images/logo.png";
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
@@ -11,8 +11,7 @@ function Header() {
             </Link>
             <nav className='header__nav'>
                 <ul className='header__list'>
-                    <NavLink exact={true} to='/login' className="header__list-item" >Login</NavLink>
-                    <NavLink to='/signup'className="header__list-item">Sign-Up</NavLink>
+                    <NavLink exact={true} to='/portal' className="header__list-item" >Portal</NavLink>
                 </ul>
             </nav>            
         </header>

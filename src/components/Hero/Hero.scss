@@ -10,12 +10,13 @@
         opacity: 70%;
         display: block;
         position: absolute;
-        transform: translateX(35%) translateY(320%);
-        margin: unset;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 325%);
         @include tablet {
-            top: 5.5em;
-            left: 12em;
             width: fit-content;
+            transform: translate(-50%, 600%);
         }
         &:hover {
             opacity: unset;
