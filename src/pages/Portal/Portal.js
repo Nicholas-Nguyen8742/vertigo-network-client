@@ -9,7 +9,7 @@ function Portal() {
     return (
         <main className="login">
             <div className="video-wrapper">
-                <video className="video" playsInline autoplay="autoplay" muted loop="true">
+                <video className="video" playsInline autoPlay="autoplay" muted loop={true}>
                     <source src={background} type="video/mp4" />
                 </video>
             </div>

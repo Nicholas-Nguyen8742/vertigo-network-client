@@ -3,11 +3,12 @@ import React, { Component } from 'react';
 
 class LoginForm extends Component {
     state = {
-        
+        success: false
     }
+
     render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 
             </form>
         );
