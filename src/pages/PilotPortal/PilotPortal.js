@@ -1,6 +1,7 @@
 import './PilotPortal.scss'
 import React, { Component } from 'react';
 import LoginForm from '../../components/LoginForm/LoginForm';
+import pilotbg from '../../assets/videos/pilot_login.mp4';
 
 class PilotPortal extends Component {
     state = {
@@ -10,7 +11,7 @@ class PilotPortal extends Component {
     render() {
         return (
             <main>
-                <LoginForm title="Pilot"/>
+                <LoginForm title="Pilot" video={pilotbg}/>
             </main>
         );
     }

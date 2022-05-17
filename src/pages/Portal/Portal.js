@@ -3,12 +3,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import pilot from '../../assets/icons/pilot_icon.svg';
 import client from '../../assets/icons/client_icon.svg';
+import background from '../../assets/images/login-background.mp4';
 import PortalBackground from "../../components/PortalBackground/PortalBackground";
 
 export default function Portal() {
     return (
         <main className="login">
-            <PortalBackground />
+            <PortalBackground video={background}/>
             <div className="login-wrapper">
                 <Link to='/portal/pilot' className="login__link">
                     <article className="login__card">
