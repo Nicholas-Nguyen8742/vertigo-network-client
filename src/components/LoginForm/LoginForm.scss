@@ -55,8 +55,25 @@
             transform: scale(0.95);
         }
         &:hover {
-            
+            background-color: $Primary-Gray;
+            color: $Primary-Yellow;
             cursor: pointer;
+            outline: 1px solid $Primary-Yellow;
+        }
+    }
+    &__register {
+        display: flex;
+        margin-top: 2rem;
+        &__body {
+            color: $Primary-Black;
+            margin-right: 0.5rem;
+        }
+        &__link {
+            color: $Primary-Yellow;
+            cursor: pointer;
+            &:hover {
+                color: $Primary-Gray;
+            }
         }
     }
 }
