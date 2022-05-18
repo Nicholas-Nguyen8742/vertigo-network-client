@@ -27,5 +27,3 @@ export default function Portal() {
         </main>
     );
 }
-
-// export default Portal;
