@@ -40,7 +40,7 @@ class LoginForm extends Component {
                         <h2 className="loginForm__title">{title} Sign-in</h2>
                         <Input type="text" name="email" label="Email" />
                         <Input type="password" name="password" label="Password" />
-                        <button className='loginForm__btn'>Sign-In</button>
+                        <button className='loginForm__btn' type="submit">Sign-In</button>
                         <div className='loginForm__register'>
                             <p className='loginForm__register__body'>Join the Network!</p>
                             <Link to="/portal/signup" className='loginForm__register__link'>Register</Link>
