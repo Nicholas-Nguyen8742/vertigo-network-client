@@ -17,16 +17,18 @@ class SignUp extends Component {
 
         axios
             .post("http://localhost:8080/users/register", {
+                type: event.target.type.value,
+                firstName: event.target.firstName.value,
+                lastName: event.target.lastName.value,
+                city: event.target.city.value, 
+                state: event.target.state.value,
                 email: event.target.email.value,
                 password: event.target.password.value,
-                first_name: event.target.first_name.value,
-                last_name: event.target.last_name.value,
-                phone: event.target.phone.value,
-                address: event.target.address.value,
             })
             .then(() => {
                 this.setState({ success: true, error: "" });
                 event.target.reset();
+                console.log(this.state.success);
             })
             .catch((error) => {
                 this.setState({ success: false, error: error.response.data });
