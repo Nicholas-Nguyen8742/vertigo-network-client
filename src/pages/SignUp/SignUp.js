@@ -21,18 +21,18 @@ export default function SignUp() {
                                 <h3 className='signUp__form-radio__title'>Select your network: </h3>
                                 <label className='signUp__form-radio__label'>
                                     Pilot
-                                    <input className='signUp__form-radio__input' type="radio" name="user" value="pilot"/>
+                                    <input className='signUp__form-radio__input' type="radio" name="type" value="pilot"/>
                                 </label>
                                 <label className='signUp__form-radio__label'>
                                     Client
-                                    <input className='signUp__form-radio__input'type="radio" name="user" value="client"/>
+                                    <input className='signUp__form-radio__input'type="radio" name="type" value="client"/>
                                 </label>
                             </div>
                         </div>
                         <div className='signUp__form-right'> 
                             <Input type="text" name="city" label="City"/>
                             <Input type="text" name="state" label="State"/>
-                            <Input type="email" name="password" label="Password"/>
+                            <Input type="password" name="password" label="Password"/>
                             <Input type="password" name="confirmPassword" label="Confirm Password"/>
                         </div>
                     </div>
