@@ -3,10 +3,10 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import HomePage from './pages/HomePage/HomePage';
-import Portal from './pages/Portal/Portal';
+// import Portal from './pages/Portal/Portal';
 import SignUp from './pages/SignUp/SignUp';
 import PilotPortal from './pages/PilotPortal/PilotPortal';
-import ClientPortal from './pages/ClientPortal/ClientPortal';
+import DashboardPage from './pages/DashboardPage/DashboardPage';
 
 function App() {
   return (
@@ -17,7 +17,8 @@ function App() {
         <Route path="/portal" exact component={PilotPortal} />
         <Route path="/portal/signup" exact component={SignUp} />
         {/* <Route path="/portal/:id" exact component={PilotPortal} /> */}
-        {/* <Route path="/portal/client" exact component={ClientPortal} /> */}
+
+        <Route path="/dashboard" exact component={DashboardPage} />
       </Switch>
     </BrowserRouter>
   );

@@ -1,8 +1,8 @@
-import './ClientPortal.scss';
+import './DashboardPage.scss';
 import React, { Component } from 'react';
 import LoginForm from '../../components/LoginForm/LoginForm';
 
-class ClientPortal extends Component {
+class DashboardPage extends Component {
     state = {
 
     }
@@ -16,4 +16,4 @@ class ClientPortal extends Component {
     }
 }
 
-export default ClientPortal;
+export default DashboardPage;
