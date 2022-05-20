@@ -5,7 +5,7 @@ import Header from './components/Header/Header';
 import HomePage from './pages/HomePage/HomePage';
 // import Portal from './pages/Portal/Portal';
 import SignUp from './pages/SignUp/SignUp';
-import PilotPortal from './pages/PilotPortal/PilotPortal';
+import LoginPage from './pages/LoginPage/LoginPage';
 import DashboardPage from './pages/DashboardPage/DashboardPage';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/portal" exact component={PilotPortal} />
+        <Route path="/portal" exact component={LoginPage} />
         <Route path="/portal/signup" exact component={SignUp} />
         {/* <Route path="/portal/:id" exact component={PilotPortal} /> */}
 

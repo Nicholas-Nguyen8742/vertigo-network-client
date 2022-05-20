@@ -1,9 +1,9 @@
-import './PilotPortal.scss'
+import './LoginPage.scss'
 import React, { Component } from 'react';
 import LoginForm from '../../components/LoginForm/LoginForm';
 import pilotbg from '../../assets/videos/pilot_login.mp4';
 
-class PilotPortal extends Component {
+class LoginPage extends Component {
     state = {
 
     }
@@ -17,4 +17,4 @@ class PilotPortal extends Component {
     }
 }
 
-export default PilotPortal;
+export default LoginPage;
