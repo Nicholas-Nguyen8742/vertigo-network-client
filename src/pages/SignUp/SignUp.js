@@ -21,7 +21,7 @@ export default function SignUp() {
                                 <h3 className='signUp__form-radio__title'>Select your network: </h3>
                                 <label className='signUp__form-radio__label'>
                                     Pilot
-                                    <input className='signUp__form-radio__input' type="radio" name="user" label="pilot"/>
+                                    <input className='signUp__form-radio__input' type="radio" name="user" value="pilot"/>
                                 </label>
                                 <label className='signUp__form-radio__label'>
                                     Client
