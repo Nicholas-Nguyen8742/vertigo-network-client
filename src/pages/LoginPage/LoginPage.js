@@ -1,19 +1,20 @@
-import './ClientPortal.scss';
+import './LoginPage.scss'
 import React, { Component } from 'react';
 import LoginForm from '../../components/LoginForm/LoginForm';
+import pilotbg from '../../assets/videos/pilot_login.mp4';
 
-class ClientPortal extends Component {
+class LoginPage extends Component {
     state = {
 
     }
-    
+
     render() {
         return (
             <main>
-                <LoginForm title="Client" />
+                <LoginForm title="Pilot" video={pilotbg}/>
             </main>
         );
     }
 }
 
-export default ClientPortal;
+export default LoginPage;

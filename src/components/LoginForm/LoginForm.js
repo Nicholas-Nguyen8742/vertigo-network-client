@@ -13,34 +13,34 @@ class LoginForm extends Component {
         success: false
     }
 
-    // handleSubmit = (event) => {
-    //     event.preventDefault();
+    handleSubmit = (event) => {
+        event.preventDefault();
 
-    //     axios
-    //         .post('http://localhost:8080/api/users/login', {
-    //             email: event.target.email.value,
-    //             password: event.target.password.value
-    //         })
-    //         .then((response) => {
-    //             sessionStorage.setItem("token", response.data.token);
-    //             this.setState({ success: true });
-    //         })
-    //         .catch((error) => {
-    //             this.setState({ error: error.response.data });
-    //         });
-    // };
+        axios
+            .post('http://localhost:8080/users/login', {
+                email: event.target.email.value,
+                password: event.target.password.value
+            })
+            .then((response) => {
+                sessionStorage.setItem("token", response.data.token);
+                this.setState({ success: true });
+            })
+            .catch((error) => {
+                this.setState({ error: error.response.data });
+            });
+    };
 
     render() {
-        const { title, video } = this.props;
+        const { video } = this.props;
         return (
             <div className='loginForm'>
                 <PortalBackground video={video} />
                 <section className='loginForm-wrapper'>
                     <form className="loginForm__form" onSubmit={this.handleLogin}>
-                        <h2 className="loginForm__title">{title} Sign-in</h2>
+                        <h2 className="loginForm__title">Sign-in</h2>
                         <Input type="text" name="email" label="Email" />
                         <Input type="password" name="password" label="Password" />
-                        <button className='loginForm__btn'>Sign-In</button>
+                        <button className='loginForm__btn' type="submit">Sign-In</button>
                         <div className='loginForm__register'>
                             <p className='loginForm__register__body'>Join the Network!</p>
                             <Link to="/portal/signup" className='loginForm__register__link'>Register</Link>

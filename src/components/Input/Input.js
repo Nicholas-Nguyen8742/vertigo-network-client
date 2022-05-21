@@ -5,7 +5,7 @@ export default function Input({ label, name, type }) {
     return (
             <div className='field'>
                 <label className='field__label'>{label}</label>
-                <input placeholder={label} type={type} id={name} className="field__input" /> 
+                <input placeholder={label} type={type} name={name} className="field__input" /> 
             </div>
     );
 }
