@@ -8,6 +8,7 @@ import video from '../../assets/videos/portal_login.mp4';
 
 class SignUp extends Component {
     state = {
+        
         error: "",
         success: false,
     };
