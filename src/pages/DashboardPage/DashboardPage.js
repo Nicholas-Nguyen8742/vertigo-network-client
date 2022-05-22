@@ -8,7 +8,7 @@ class DashboardPage extends Component {
     
     render() {
         return (
-            <main>
+            <main className='dashboard-page'>
 
             </main>
         );

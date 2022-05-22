@@ -7,33 +7,33 @@
     flex-direction: column;
     align-items: center;
     background-color: $Primary-Black;
-    padding-bottom: 1rem;
+    // padding-bottom: 1rem;
     &__logo {
         height: 3rem;
     }
-    &__nav {
-        display: flex;
-        align-items: center;
+    // &__nav {
+    //     display: flex;
+    //     align-items: center;
 
-    }
-    &__list {
-        list-style: none;
-        display: unset;
-        margin: unset;
-        padding: unset;
-        &-item {
-            color: $Secondary-White;
-            margin: 1rem;
-            text-decoration: none;
-            width: 4rem;
-            &:hover {
-                text-decoration: underline;
-                color: $Primary-Yellow;
-                background-color: $Primary-Gray;
-                border-radius: 20px;
-                opacity: 75%;
-            }
-        }
-    }
+    // }
+    // &__list {
+    //     list-style: none;
+    //     display: unset;
+    //     margin: unset;
+    //     padding: unset;
+    //     &-item {
+    //         color: $Secondary-White;
+    //         margin: 1rem;
+    //         text-decoration: none;
+    //         width: 4rem;
+    //         &:hover {
+    //             text-decoration: underline;
+    //             color: $Primary-Yellow;
+    //             background-color: $Primary-Gray;
+    //             border-radius: 20px;
+    //             opacity: 75%;
+    //         }
+    //     }
+    // }
 
 }
