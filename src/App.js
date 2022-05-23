@@ -10,6 +10,7 @@ import DashboardPage from './pages/DashboardPage/DashboardPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
 import ProfileReviewsPage from './pages/ProfileReviewsPage/ProfileReviewsPage';
 import MissionsPage from './pages/MissionsPage/MissionsPage';
+import MissionsAllPage from './pages/MissionsAllPage/MissionsAllPage';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/profile" exact component={ProfilePage} />
         <Route path="/profile/reviews" exact component={ProfileReviewsPage} />
         <Route path="/missions" exact component={MissionsPage} />
+        <Route path="/missions/all" exact component={MissionsAllPage} />
       </Switch>
     </BrowserRouter>
   );

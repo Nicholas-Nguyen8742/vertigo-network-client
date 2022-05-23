@@ -4,12 +4,12 @@
 
 .availableMissions {
     width: fit-content;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    height: 100%;
     &__title {
-        margin-bottom: 1.75rem;
+        margin-bottom: 0.75rem;
         text-align: center;
     }
     &__results {
