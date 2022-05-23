@@ -2,18 +2,15 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/typography' as *;
 
-.dashboard {
+.reviews {
     &-page {
         display: flex;
     }
     &-main {
         margin: 2rem 3rem;
+        height: 100vh;
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        height: 100vh;
-
+        flex-direction: column;
     }
 }
-

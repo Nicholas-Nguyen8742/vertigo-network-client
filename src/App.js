@@ -8,6 +8,7 @@ import SignUp from './pages/SignUp/SignUp';
 import LoginPage from './pages/LoginPage/LoginPage';
 import DashboardPage from './pages/DashboardPage/DashboardPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
+import ProfileReviewsPage from './pages/ProfileReviewsPage/ProfileReviewsPage';
 import MissionsPage from './pages/MissionsPage/MissionsPage';
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
 
         <Route path="/dashboard" exact component={DashboardPage} />
         <Route path="/profile" exact component={ProfilePage} />
+        <Route path="/profile/reviews" exact component={ProfileReviewsPage} />
         <Route path="/missions" exact component={MissionsPage} />
       </Switch>
     </BrowserRouter>
