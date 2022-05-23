@@ -1,0 +1,16 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/typography' as *;
+
+// Map is styled using leaflet-container
+.missionsMap {
+    padding: 1rem;
+    width: 64%;
+}
+
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    // TODO - Make responsive
+}
