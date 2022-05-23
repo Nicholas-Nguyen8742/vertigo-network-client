@@ -6,7 +6,7 @@ import PortalBackground from '../../components/PortalBackground/PortalBackground
 import Input from '../../components/Input/Input';
 import video from '../../assets/videos/portal_login.mp4';
 
-class SignUp extends Component {
+export default class SignUp extends Component {
     state = {
         
         error: "",
@@ -78,5 +78,3 @@ class SignUp extends Component {
         );
     }      
 }
-
-export default SignUp;

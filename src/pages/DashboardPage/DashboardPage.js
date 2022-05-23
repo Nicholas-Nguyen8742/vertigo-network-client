@@ -5,7 +5,7 @@ import UpcomingMissions from '../../components/UpcomingMissions/UpcomingMissions
 import WeatherSection from '../../components/WeatherSection/WeatherSection';
 import PendingMissions from '../../components/PendingMissions/PendingMissions';
 
-class DashboardPage extends Component {
+export default class DashboardPage extends Component {
     state = {
 
     }
@@ -23,5 +23,3 @@ class DashboardPage extends Component {
         );
     }
 }
-
-export default DashboardPage;

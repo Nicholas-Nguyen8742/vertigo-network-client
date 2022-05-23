@@ -8,8 +8,9 @@ import SignUp from './pages/SignUp/SignUp';
 import LoginPage from './pages/LoginPage/LoginPage';
 import DashboardPage from './pages/DashboardPage/DashboardPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
+import MissionsPage from './pages/MissionsPage/MissionsPage';
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Header />
@@ -21,9 +22,9 @@ function App() {
 
         <Route path="/dashboard" exact component={DashboardPage} />
         <Route path="/profile" exact component={ProfilePage} />
+        <Route path="/missions" exact component={MissionsPage} />
       </Switch>
     </BrowserRouter>
   );
 }
 
-export default App;

@@ -1,19 +1,20 @@
-import './ProfilePage.scss';
+import './MissionsPage.scss';
 import React, { Component } from 'react';
 import NavBar from '../../components/NavBar/NavBar';
 
-export default class ProfilePage extends Component {
+export default class MissionsPage extends Component {
     state = {
 
     }
     render() {
         return (
-            <main className='profile-page'>
+            <main className='missions-page'>
                 <NavBar />
-                <div className='profile-main'>
+                <div className='missions-main'>
 
                 </div>
             </main>
         );
     }
 }
+

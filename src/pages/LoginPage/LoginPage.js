@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import LoginForm from '../../components/LoginForm/LoginForm';
 import pilotbg from '../../assets/videos/pilot_login.mp4';
 
-class LoginPage extends Component {
+export default class LoginPage extends Component {
     state = {
 
     }
@@ -16,5 +16,3 @@ class LoginPage extends Component {
         );
     }
 }
-
-export default LoginPage;

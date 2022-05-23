@@ -1,0 +1,15 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/typography' as *;
+
+.missions {
+    &-page {
+        display: flex;
+    }
+    &-main {
+        margin: 2rem 3rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -3,7 +3,7 @@ import Hero from "../../components/Hero/Hero";
 import AboutUs from "../../components/AboutUs/AboutUs";
 import React from 'react';
 
-function HomePage() {
+export default function HomePage() {
     return (
         <main>
             <Hero />
@@ -11,5 +11,3 @@ function HomePage() {
         </main>
     );
 }
-
-export default HomePage;
