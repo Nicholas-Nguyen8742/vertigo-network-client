@@ -38,10 +38,10 @@ class DashboardPage extends Component {
                             className="navbar__item-inactive" 
                             to='/profile'>
                             <img className="navbar__icon-drone" src={missions} alt=''/>
-                            Profile</NavLink> 
+                            Missions</NavLink> 
                     </ul>
                     <div className='navbar__logout'>
-                        <img className="navbar__icon" src={logout} alt=''/>
+                        <img className="navbar__icon-logout" src={logout} alt=''/>
                         <p>Logout</p>
                     </div>
                 </nav>
