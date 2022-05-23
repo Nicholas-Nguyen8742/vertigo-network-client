@@ -1,13 +1,16 @@
 import './UpcomingMissions.scss';
 import React from 'react';
-import profile from '../../assets/images/IMG_8313.JPG';
+import UpcomingMissionCard from '../UpcomingMissionCard/UpcomingMissionCard';
 
 function UpcomingMissions() {
     return (
         <section className='upcomingMissions'>
             <h2 className='upcomingMissions__title'>Upcoming Missions</h2>
             <div className='cardList'>
-            <article className='card'>
+                <UpcomingMissionCard />
+                <UpcomingMissionCard />
+                <UpcomingMissionCard />
+            {/* <article className='card'>
                 <img className='card__img' src={profile} alt=''/>
                 <div className='card-right'>
                     <h4  className='card__title'>Colton Summers</h4>
@@ -36,7 +39,7 @@ function UpcomingMissions() {
                     <h5 className='card__location'>Kissimmee, FL</h5>
                     <h5 className='card__date'>5/23/22</h5>
                 </div>
-            </article>
+            </article> */}
             </div>
         </section>
     );
