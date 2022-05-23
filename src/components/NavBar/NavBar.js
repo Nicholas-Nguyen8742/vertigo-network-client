@@ -18,7 +18,6 @@ export default function NavBar() {
                     activeClassName="navbar__item-active" 
                     className="navbar__item-inactive" 
                     to='/dashboard'>
-                    <span className='navbar__item-bg'></span>
                     <img className="navbar__icon-home" src={home} alt=''/>
                     <h4 className='navbar__text'>Dashboard</h4>
                 </NavLink>
@@ -27,17 +26,19 @@ export default function NavBar() {
                     className="navbar__item-inactive" 
                     to='/profile'>
                     <img className="navbar__icon-profile" src={profile} alt=''/>
-                    Profile</NavLink> 
+                    <h4 className='navbar__text'>Profile</h4>
+                </NavLink> 
                 <NavLink 
                     activeClassName="navbar__item-active" 
                     className="navbar__item-inactive" 
                     to='/profile'>
                     <img className="navbar__icon-drone" src={missions} alt=''/>
-                    Missions</NavLink> 
+                    <h4 className='navbar__text'>Missions</h4>
+                </NavLink> 
             </ul>
             <div className='navbar__logout'>
                 <img className="navbar__icon-logout" src={logout} alt=''/>
-                <p>Logout</p>
+                <h4>Logout</h4>
             </div>
         </nav>
     );
