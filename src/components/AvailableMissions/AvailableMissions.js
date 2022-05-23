@@ -14,8 +14,6 @@ export default function AvailableMissions() {
             <MissionCard />
             <MissionCard />
             <MissionCard />
-
-            <MissionCard />
             <NavLink className='availableMissions__link' to="/missions/all">
                 <img className='availableMissions__link' src={chevron} alt='' />
             </NavLink>
