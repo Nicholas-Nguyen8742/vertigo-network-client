@@ -28,7 +28,11 @@
             align-items: center;
         }
     }
-    
+    &__location {
+        position: absolute;
+        bottom: .25em;
+        right: .25em;
+    }
     &__day {
         color: $Primary-Gray;
         margin-bottom: 0.25rem;
@@ -36,8 +40,21 @@
     &__icon {
         height: 2rem;
         margin-bottom: 0.5rem;
+        &-top {
+            position: absolute;
+            top: 2.5em;
+            left: 4em;
+            filter: invert(1) contrast(5);
+            height: 6rem;
+        }
     }
     &__temp {
         color: $Primary-Gray;
+        &-top {
+            font-size: 6rem;
+            position: absolute;
+            top: .4em;
+            left: 2em;
+        }
     }
 }
