@@ -6,6 +6,14 @@ import Input from '../../components/Input/Input';
 
 export default class SignUpForm extends Component {
     state = {
+        firstName: "",
+        lastName: "",
+        city: "",
+        state: "",
+        email: "",
+        type: '',
+        password: "",
+        confirmPassword: "",
         error: "",
         success: false,
     };
@@ -18,16 +26,16 @@ export default class SignUpForm extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-
+        const { firstName, lastName, city, state, email, password, type } = this.state;
         axios
             .post("http://localhost:8080/auth/register", {
-                type: event.target.type.value,
-                firstName: event.target.firstName.value,
-                lastName: event.target.lastName.value,
-                city: event.target.city.value,
-                state: event.target.state.value,
-                email: event.target.email.value,
-                password: event.target.password.value,
+                type,
+                firstName,
+                lastName,
+                city,
+                state,
+                email,
+                password
             })
             .then(() => {
                 this.setState({ success: true, error: "" });
