@@ -11,7 +11,10 @@ export default class DashboardPage extends Component {
         city: 'Orlando',
         location: {}, 
         current: {},
-        forecast: []
+        forecast: [1]
+    }
+    componentDidMount() {
+        
     }
 
     getForecast = async () => {
