@@ -12,4 +12,48 @@
         display: flex;
         flex-wrap: wrap;
     }
+    &-portfolio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.profile-nav {
+    width: 102%;
+    margin: 0 -1rem;
+    padding: 1rem 0;
+    border-bottom: .5px solid #7B7B7B;
+    border-top: .5px solid #7B7B7B;
+    display: flex;
+    justify-content: space-between;
+    &__list {
+        list-style: none;
+        display: flex;
+        margin-left: 2.25rem;
+    }
+    &__item-inactive {
+        width: fit-content;
+        margin-right: 3rem;
+        text-decoration: none;
+        color: $Primary-White;
+        font-size: 18px;
+        font-weight: 500;
+        &:hover {
+            padding-bottom: 0.75rem;
+            border-bottom: 4px solid $Primary-White;
+        }
+    }
+    &__item-active {
+        font-weight: 600;
+        padding-bottom: 0.75rem;
+        border-bottom: 4px solid #FBE312;
+    }
+    &__button {
+        margin-right: 3rem;
+        background-color: #FBE312;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+        padding: 0.5rem 2rem;
+    }
 }

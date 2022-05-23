@@ -9,7 +9,7 @@ import logout from '../../assets/icons/logout_icon.png';
 
 export default function NavBar() {
     return (
-        <nav className='navbar'>
+        <nav className='navbar' id="mainNav">
             <img className='navbar__profile' src={profileImg} alt=""></img>
             <h3 className='navbar__user'>Mike Lopez</h3>
             <ul className='navbar__list'>
