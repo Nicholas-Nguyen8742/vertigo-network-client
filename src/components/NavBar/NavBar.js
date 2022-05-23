@@ -31,7 +31,7 @@ export default function NavBar() {
                 <NavLink 
                     activeClassName="navbar__item-active" 
                     className="navbar__item-inactive" 
-                    to='/profile'>
+                    to='/missions'>
                     <img className="navbar__icon-drone" src={missions} alt=''/>
                     <h4 className='navbar__text'>Missions</h4>
                 </NavLink> 

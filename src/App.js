@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage/HomePage';
 import SignUp from './pages/SignUp/SignUp';
 import LoginPage from './pages/LoginPage/LoginPage';
 import DashboardPage from './pages/DashboardPage/DashboardPage';
+import ProfilePage from './pages/ProfilePage/ProfilePage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         {/* <Route path="/portal/:id" exact component={PilotPortal} /> */}
 
         <Route path="/dashboard" exact component={DashboardPage} />
+        <Route path="/profile" exact component={ProfilePage} />
       </Switch>
     </BrowserRouter>
   );
