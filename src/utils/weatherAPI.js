@@ -1,7 +1,7 @@
 import axios from 'axios';
-require('dotenv').config();
+import {API_Key} from "./API_Key.js";
+
 const API_URL = 'http://api.weatherapi.com/v1/forecast.json';
-const API_Key = process.env.API_Key;
 
 export const getWeather = async (city) => {
     try {
