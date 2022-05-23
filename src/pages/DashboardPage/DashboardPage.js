@@ -12,8 +12,9 @@ class DashboardPage extends Component {
         return (
             <main className='dashboard-page'>
                 <NavBar />
-
-
+                <div className='dashboard-page'>
+                    
+                </div>
             </main>
         );
     }

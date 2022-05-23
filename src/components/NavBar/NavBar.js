@@ -38,7 +38,7 @@ export default function NavBar() {
             </ul>
             <div className='navbar__logout'>
                 <img className="navbar__icon-logout" src={logout} alt=''/>
-                <h4>Logout</h4>
+                <h4 className='navbar__text'>Logout</h4>
             </div>
         </nav>
     );
