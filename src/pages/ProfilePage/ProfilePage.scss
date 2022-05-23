@@ -2,7 +2,7 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/typography' as *;
 
-.dashboard {
+.profile {
     &-page {
         display: flex;
     }
@@ -13,4 +13,3 @@
         flex-wrap: wrap;
     }
 }
-
