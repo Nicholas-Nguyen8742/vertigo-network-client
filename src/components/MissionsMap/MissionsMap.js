@@ -1,18 +1,39 @@
 import './MissionsMap.scss';
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { MapContainer, TileLayer } from 'react-leaflet';
+import DarkMapBtn from '../DarkMapBtn/DarkMapBtn';
+// Dark Mode
+// URL https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png
+// Attributions 	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 
 
-export default function MissionsMap() {
+const MissionsMap = () => {
+    const state = { center: { lat: 28.5384, lng: -81.3789 }};
+    const [colorMode, setColorMode] = useState("light");
+
+    const light = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+    const dark = "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png";
+
+    const onClick = () => {setColorMode((colorMode) => (colorMode === "light" ? "dark" : "light"));};
+    
+    const ref = useRef(null);
+    useEffect(() => {
+        if (ref.current) {
+          ref.current.setUrl(colorMode === "light" ? light : dark);
+        }
+    }, [colorMode]);
+
     return (
         <section className='missionsMap'>
+            <DarkMapBtn onClick={onClick}/>
             <MapContainer 
-                center={[28.5384, -81.3789]} 
+                center={state.center} 
                 zoom={11} 
                 scrollWheelZoom={true}>
                 <TileLayer
+                    ref={ref}
                     attribution={'&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}
-                    url={"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"}
+                    url={colorMode === "light" ? light : dark}
                 />
                 {/* <Marker position={[33.5290172, -85.253076]}></Marker>
                 {playgrounds.map(playground => (
@@ -30,7 +51,7 @@ export default function MissionsMap() {
                 ))} */}
             </MapContainer>
         </section>
-
     );
 }
 
+export default MissionsMap;
