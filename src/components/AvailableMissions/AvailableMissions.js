@@ -8,6 +8,8 @@ export default function AvailableMissions() {
             <h2 className='availableMissions__title'>Pending Missions</h2>
             <MissionCard />
             <MissionCard />
+            <MissionCard />
+            <MissionCard />
         </section>
     );
 }
