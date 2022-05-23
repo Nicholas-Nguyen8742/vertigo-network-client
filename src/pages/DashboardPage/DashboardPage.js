@@ -33,6 +33,13 @@ export default class DashboardPage extends Component {
     }
     
     render() {
+        if (this.state.forecast.length === 0) {
+            return (
+              <main>
+                <p className="loading">... Loading your Profile ...</p>
+              </main>
+            )
+        }
         return (
             <main className='dashboard-page'>
                 <NavBar />
