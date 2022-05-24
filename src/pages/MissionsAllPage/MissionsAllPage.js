@@ -1,7 +1,7 @@
 import './MissionsAllPage.scss';
 import React, {Component} from 'react';
 import NavBar from '../../components/NavBar/NavBar';
-import MissionCard from '../../components/UpcomingMissionCard/UpcomingMissionCard';
+import MissionCard from '../../components/MissionCard/MissionCard';
 import axios from 'axios';
 import { API_URL } from '../../utils/API';
 
@@ -19,11 +19,10 @@ export default class MissionsAllPage extends Component {
                 })
             })
     }
-
-    
     
     render(){
         console.log(this.state.allMissions);
+        const openMissions = this.state.allMissions;
         return (
             <main className='missionsAll-page'>
                     <NavBar />
@@ -31,18 +30,16 @@ export default class MissionsAllPage extends Component {
                         <input type="search" id="" className="missionsAll__search"
                         placeholder="Search..."/>
                         <div className='missionsAll-results'>
-                            <MissionCard />
-                            <MissionCard />
-                            <MissionCard />
-                            <MissionCard />
-                            <MissionCard />
-                            <MissionCard />
-                            <MissionCard />
-                            <MissionCard />
-                            <MissionCard />
-                            <MissionCard />
-                            <MissionCard />
-                            <MissionCard />
+                            {openMissions.map((item) => (
+                                <MissionCard 
+                                    key={item.timestamp}
+                                    firstName={item.firstName}
+                                    lastName={item.lastName}
+                                    profile={item.profile}
+                                    city={item.city}
+                                    state={item.state}
+                                    date={item.date}/>
+                            ))}    
                         </div>
                     </div>
             </main>

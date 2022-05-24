@@ -27,7 +27,7 @@
 
 // Targets the background
 canvas {
-    height: 15rem !important;
+    height: 100vh !important;
     width: 100vw !important;
     @include tablet {
         height: 25rem !important;
