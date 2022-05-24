@@ -6,13 +6,13 @@ import PortfolioDescription from '../../components/PortfolioDescription/Portfoli
 
 export default function ProfileReviewsPage() {
     return (
-        <main className='profile-page'>
+        <main className='profileReviews-page'>
             <NavBar />
-            <div className='profile-main'>
+            <div className='profileReviews-main'>
                 <PortfolioDescription />
                 <ProfileNav btn="Reviews" />
-                <div className='profile-portfolio'>
-
+                <div className='profileReviews-portfolio'>
+                    
 
                 </div>
             </div>

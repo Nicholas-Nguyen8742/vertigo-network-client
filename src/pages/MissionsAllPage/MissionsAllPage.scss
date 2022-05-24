@@ -11,10 +11,12 @@
         margin: 2rem 3rem;
         width: 100%;
         height: auto;
+        margin-top: 3rem;
+        margin-left: 16rem;
     }
     &-results {
-        width: 64%;
-        margin-left: 16rem;
+        width: 99%;
+        margin-left: 2rem;
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
@@ -29,6 +31,7 @@
         border-radius: 6px;
         align-self: center;
         margin-bottom: 3rem;
-        margin-left: 16rem;
+        margin-left: 20rem;
+        margin-top: 3rem;
     }
 }
