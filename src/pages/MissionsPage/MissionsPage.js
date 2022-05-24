@@ -1,14 +1,13 @@
 import './MissionsPage.scss';
-import React, { Component } from 'react';
+import React from 'react';
 import NavBar from '../../components/NavBar/NavBar';
 import AvailableMissions from '../../components/AvailableMissions/AvailableMissions';
 import MissionsMap from '../../components/MissionsMap/MissionsMap';
 
-export default class MissionsPage extends Component {
-    state = {
+export default function MissionsPage() {
 
-    }
-    render() {
+
+
         return (
             <main className='missions-page'>
                 <NavBar />
@@ -19,5 +18,5 @@ export default class MissionsPage extends Component {
             </main>
         );
     }
-}
+
 

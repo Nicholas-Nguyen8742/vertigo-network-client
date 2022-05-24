@@ -7,14 +7,17 @@
         display: flex;
     }
     &-main {
+        position: relative;
         margin: 2rem 3rem;
         width: 100%;
         height: auto;
     }
     &-results {
+        width: 64%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        align-items: flex-end;
+        justify-content: flex-end;
     }
     &__search {
         height: 3rem;
