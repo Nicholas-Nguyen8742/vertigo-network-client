@@ -73,11 +73,11 @@ export default class SignUpForm extends Component {
                             <h3 className='signUp__form-radio__title'>Select your network: </h3>
                             <label className='signUp__form-radio__label'>
                                 Pilot
-                                <input className='signUp__form-radio__input' type="radio" name="type" value="pilot" />
+                                <input className='signUp__form-radio__input' type="radio" name="type" value="Pilot" checked={this.state.type === "Pilot"} onChange={this.handleChange}/>
                             </label>
                             <label className='signUp__form-radio__label'>
                                 Client
-                                <input className='signUp__form-radio__input' type="radio" name="type" value="client" />
+                                <input className='signUp__form-radio__input' type="radio" name="type" value="Client"  checked={this.state.type === "Client"} onChange={this.handleChange}/>
                             </label>
                         </div>
                     </div>
