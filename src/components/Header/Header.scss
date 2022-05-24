@@ -9,6 +9,7 @@
     position: fixed;
     background-color: $Primary-Black;
     width: 100vw;
+    z-index: 1;
     &-wrapper {
         position: relative;
     }

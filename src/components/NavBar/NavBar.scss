@@ -13,6 +13,7 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    z-index: 1;
     &__profile {
         border-radius: 50%;
         width: 5rem;
