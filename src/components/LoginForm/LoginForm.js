@@ -8,7 +8,7 @@ import Input from '../Input/Input';
 
 
 /* Used for both Client & Pilot Portal Logins */
-class LoginForm extends Component {
+export default class LoginForm extends Component {
     state = {
         email: "",
         password: "",
@@ -66,4 +66,3 @@ class LoginForm extends Component {
     }
 }
 
-export default LoginForm;
