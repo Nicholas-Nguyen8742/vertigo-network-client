@@ -39,6 +39,7 @@
             flex-wrap: wrap;
 
             &__title {
+                color: $Primary-Black;
                 order: 1;
                 width: 100%;
                 margin: 0 0 1rem 0;
@@ -47,6 +48,7 @@
             }
 
             &__label {
+                color: $Primary-Black;
                 margin: 0 1rem;
                 order: 2;
                 width: 30%;
@@ -61,11 +63,12 @@
     &__title {
         width: fit-content;
         padding-bottom: 1rem;
+        color: $Primary-Black;
     }
 
     &__btn {
         border-radius: 20px;
-        width: 45%;
+        width: 15rem;
         font-size: 1rem;
         padding: 0.5rem 2.5rem;
         text-transform: uppercase;

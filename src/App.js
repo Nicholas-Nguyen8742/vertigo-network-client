@@ -18,8 +18,8 @@ export default function App() {
       <Header />
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/portal" exact component={LoginPage} />
-        <Route path="/portal/signup" exact component={SignUpPage} />
+        <Route path="/signup" exact component={SignUpPage} />
+        <Route path="/login" exact component={LoginPage} />
         {/* <Route path="/portal/:id" exact component={PilotPortal} /> */}
 
         <Route path="/dashboard" exact component={DashboardPage} />

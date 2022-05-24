@@ -7,9 +7,12 @@
     flex-direction: column;
     &__label {
         margin-bottom: 0.25rem;
+        color: $Primary-Black;
     }
 
     &__input {
+        color: $Primary-Black;
+        color: rgba($Secondary-Gray, $alpha: 0.8);
         background-color: rgba($Secondary-Black, $alpha: 0.12);
         border: none;
         padding: 0.75rem 1rem;
@@ -18,11 +21,41 @@
         width: 100%;
         border-radius: 4px;
         &::placeholder {
-            color: $Primary-Gray;
+            color: rgba($Secondary-Gray, $alpha: 0.8);
         }
         &:focus {
             outline: none;
-            border: 1px solid $Primary-Yellow;
+            border: 2px solid $Primary-Yellow;
+        }
+    }
+    &__group {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 1rem;
+        align-items: center;
+        margin-top: -.75rem;
+        &-hide {
+            display: none;
+        }
+        &--error {
+            display:contents;
+            height: 0.833rem;
+            display: flex;
+            justify-content: flex-start;
+            &__icon {
+                height: 1rem;
+                @include tablet {
+                    height: 1rem;
+                }
+            }
+            &__message {
+                @include body-small-mobile;
+                color: red;
+                margin-left: 0.25rem;
+                @include tablet {
+                    @include body-small-desktop;
+                }
+            }
         }
     }
 }

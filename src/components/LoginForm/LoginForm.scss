@@ -16,13 +16,13 @@
         width: 100%;
     }
     &__form {
+        background-color: $Primary-White;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: auto;
         margin-top: 2rem;
         width: auto;
-        background-color: $Secondary-Gray;
         padding: 4rem 2.5rem;
         height: auto;
         border-radius: 10px;
@@ -37,6 +37,7 @@
     }
     &__title {
         width: fit-content;
+        color: $Primary-Black;
         padding-bottom: 1rem;
     }
     &__btn {
@@ -58,7 +59,7 @@
             background-color: $Primary-Gray;
             color: $Primary-Yellow;
             cursor: pointer;
-            outline: 1px solid $Primary-Yellow;
+            outline: .5px solid $Primary-Yellow;
         }
     }
     &__register {
