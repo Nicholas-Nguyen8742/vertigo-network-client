@@ -5,7 +5,7 @@
 .profile {
     &-page {
         display: flex;
-        height: 100vh;
+        height: auto;
 
     }
     &-main {
@@ -13,10 +13,13 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin-left: 19rem;
+        margin-top: 5rem;
     }
     &-portfolio {
         display: flex;
         flex-wrap: wrap;
         align-content: flex-start;
+        justify-content: space-around;
     }
 }
