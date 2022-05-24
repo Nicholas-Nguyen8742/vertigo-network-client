@@ -8,9 +8,11 @@
     }
     &-main {
         margin: 2rem 3rem;
+        margin-left: 19rem;
+        margin-top: 5rem;
         width: 72%;
         display: flex;
         flex-wrap: wrap;
-        height: 100%;
+        height: auto;
     }
 }
