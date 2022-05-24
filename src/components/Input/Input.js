@@ -1,5 +1,5 @@
 import './Input.scss'
-import error from '../../assets/icons/error-24px.svg';
+// import error from '../../assets/icons/error-24px.svg';
 import React from 'react';
 
 
@@ -14,10 +14,10 @@ export default function Input({ label, name, type, onChange, value, valid }) {
                     value={value}
                     onChange={onChange}
                     className="field__input" /> 
-                <span className={`field__group field__group-hide ${valid ? '' : 'field__group--error'}`}>
+                {/* <span className={`field__group field__group-hide ${valid ? '' : 'field__group--error'}`}>
                     <img className="field__group--error__icon" src={error} alt=""/>
                     <p className="field__group--error__message">This field is required</p>
-                </span>
+                </span> */}
             </div>
     );
 }
