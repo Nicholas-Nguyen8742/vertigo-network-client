@@ -26,6 +26,8 @@
     }
     
     &-bottom {
+        margin-top: auto;
+        margin-bottom: 0.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -35,7 +37,7 @@
     }
     &__body {
         color: $Primary-Black;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         margin: .5rem 1rem;
         text-align: center;
     }
