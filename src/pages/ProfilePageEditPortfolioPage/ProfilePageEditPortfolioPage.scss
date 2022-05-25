@@ -24,5 +24,12 @@
         &:active {
             transform: scale(.95);
         }
+        &:hover {
+            background-color:rgba(0, 0, 0, .6);
+            color: $Primary-White;
+        }
+        &:disabled {
+            background-color:rgba(0, 0, 0, .25);
+        }
     }
 }
