@@ -19,7 +19,9 @@
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         height: 60%;
-        background: center no-repeat url('../../assets/weather/weather.svg');
+        background-position: center;
+        object-fit: cover;
+
     }
     &-bottom {
         margin: 0.5rem;
