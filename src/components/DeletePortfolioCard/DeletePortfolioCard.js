@@ -16,7 +16,7 @@ export default class DeletePortfolioCard extends Component {
           .then((response)=>{
               console.log(response);
             this.refreshPage();
-          })
+        })
     }
 
     render() {

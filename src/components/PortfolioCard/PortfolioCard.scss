@@ -22,8 +22,8 @@
         background-position: center;
         object-fit: cover;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-end;
 
     }
     &-bottom {
@@ -35,9 +35,19 @@
     }
     &__icon {
         height: 1.5rem;
+        width: 1.5rem;
+        margin-right: .25rem;
         filter: opacity(.2);
         &:hover {
             filter: opacity(1);
+        }
+        &-edit {
+            align-self: center;
+            height: 2rem;
+            filter: opacity(.2);
+            &:hover {
+            filter: opacity(1);
+        }
         }
 
     }
