@@ -8,6 +8,13 @@ import missions from '../../assets/icons/drone_icon.png';
 import logout from '../../assets/icons/logout_icon.png';
 
 export default function NavBar({id}) {
+    function handleLogout() {
+        sessionStorage.removeItem("token");
+        this.setState({
+            user: null,
+            failedAuth: true
+        })
+    };
     return (
         <nav className='navbar' id="mainNav">
             <img className='navbar__profile' src={profileImg} alt=""></img>
@@ -39,10 +46,10 @@ export default function NavBar({id}) {
                     <h4 className='navbar__text'>Missions</h4>
                 </NavLink> 
             </ul>
-            <div className='navbar__logout'>
+            <button className='navbar__logout' onClick={handleLogout}>
                 <img className="navbar__icon-logout" src={logout} alt=''/>
                 <h4 className='navbar__text'>Logout</h4>
-            </div>
+            </button>
         </nav>
     );
 }

@@ -64,13 +64,6 @@ export default class DashboardPage extends Component {
             console.log(error);
         }
     }
-    handleLogout = () => {
-        sessionStorage.removeItem("token");
-        this.setState({
-            user: null,
-            failedAuth: true
-        })
-    };
     
     render() {
         console.log(this.state.user);
