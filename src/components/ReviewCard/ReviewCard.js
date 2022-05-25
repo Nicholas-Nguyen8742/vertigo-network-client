@@ -3,12 +3,13 @@ import React from 'react';
 import quote from '../../assets/icons/quote_icon.png';
 import { ReviewCardStars } from '../ReviewCardStars/ReviewCardStars';
 
-export default function ReviewCard({ key, firstName, lastName, profile, city, state, description, rating }) {
+export default function ReviewCard({ firstName, lastName, profile, city, state, description, rating }) {
     return (
         <article className='reviewCard'>
             <div className='reviewCard-top'>
                 <img src={quote} className='reviewCard__quote' alt='' />
-                <ReviewCardStars key={key} rating={rating} />
+                <ReviewCardStars 
+                 rating={rating} />
             </div>
             <div className='reviewCard-middle'>
                 <p className='reviewCard__body'>{description}</p>
