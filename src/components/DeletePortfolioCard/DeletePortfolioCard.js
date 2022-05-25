@@ -12,8 +12,9 @@ export default class DeletePortfolioCard extends Component {
 
     deletePortfolioCard = () => {
         axios
-          .delete(`${API_URL}/pilots/${this.props.match.params.id}/portfolio/${this.props.portfolioID}` )
+          .delete(`${API_URL}/pilots/portfolio/${this.props.id}` )
           .then((response)=>{
+              console.log(response);
             this.refreshPage();
           })
     }
@@ -30,7 +31,7 @@ export default class DeletePortfolioCard extends Component {
                     </div>
                     <div className="popup__actions">
                     <button className="popup__button-cancel" onClick={() => {close()}}>Cancel</button>
-                    <button className="popup__button-delete" onClick={this.deleteWarehouse}>Delete</button>
+                    <button className="popup__button-delete" onClick={this.deletePortfolioCard}>Delete</button>
                     </div>
                 </div>
                 )}
