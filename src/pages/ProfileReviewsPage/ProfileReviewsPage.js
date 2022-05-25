@@ -18,6 +18,13 @@ render(){
                 <ProfileNav id={id} btn="Reviews" />
                 <div className='profileReviews-portfolio'>
                     <ReviewCard />
+                    <ReviewCard />
+                    <ReviewCard />
+                    <ReviewCard />
+                    <ReviewCard />
+                    <ReviewCard />
+                    <ReviewCard />
+
 
                 </div>
             </div>
