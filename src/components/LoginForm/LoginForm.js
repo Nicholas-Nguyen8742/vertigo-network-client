@@ -13,7 +13,8 @@ export default class LoginForm extends Component {
         email: "",
         password: "",
         error: "",
-        success: false
+        success: false,
+        user: ''
     }
 
     // Handles Controlled Change
@@ -33,8 +34,9 @@ export default class LoginForm extends Component {
                 password
             })
             .then((response) => {
+                console.log(response);
                 sessionStorage.setItem("token", response.data.token);
-                this.setState({ success: true });
+                this.setState({ success: true, user: response.data.user.id });
                 event.target.reset();
             })
             .catch((error) => {
@@ -53,7 +55,7 @@ export default class LoginForm extends Component {
                         <Input type="text" name="email" label="Email" value={this.state.email} onChange={this.handleChange} valid={emailValidation}/>
                         <Input type="password" name="password" label="Password" value={this.state.password} onChange={this.handleChange} valid={isEmptyPassword}/>
                         <button className='loginForm__btn' type="submit">Sign-In</button>
-                        {this.state.success && <Redirect to="/dashboard" />}
+                        {this.state.success && <Redirect to={`/dashboard/${this.state.user}`} />}
                         {this.state.error && <p>{this.state.error}</p>}
                         <div className='loginForm__register'>
                             <p className='loginForm__register__body'>Join the Network!</p>

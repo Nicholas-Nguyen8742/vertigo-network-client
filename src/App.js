@@ -22,7 +22,7 @@ export default function App() {
         <Route path="/login" exact component={LoginPage} />
         {/* <Route path="/portal/:id" exact component={PilotPortal} /> */}
 
-        <Route path="/dashboard" exact component={DashboardPage} />
+        <Route path="/dashboard/:id" exact component={DashboardPage} />
         <Route path="/profile" exact component={ProfilePage} />
         <Route path="/profile/reviews" exact component={ProfileReviewsPage} />
         <Route path="/missions" exact component={MissionsPage} />
