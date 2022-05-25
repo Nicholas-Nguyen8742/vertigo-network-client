@@ -8,7 +8,7 @@ export default function PortfolioCard({ pilotID, id, img, city, state, date, cli
     return (
         <article className='portfolioCard'>
             <div className='portfolioCard-top' style={{backgroundImage:`url(${img})`}}>
-                <Link>
+                <Link to={`/dashboard/201/portfolio/${id}/edit`}>
                     <img className='portfolioCard__icon-edit' src={edit} alt="Edit portfolio card button"/>
                 </Link>
                 <DeletePortfolioCard 
