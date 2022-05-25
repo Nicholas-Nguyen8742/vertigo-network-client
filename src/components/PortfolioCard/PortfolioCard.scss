@@ -1,0 +1,46 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/typography' as *;
+
+.portfolioCard {
+    margin: 1rem;
+    background-color: $Primary-White;
+    height: 12.5rem;
+    width: 10rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+        transform: scale(1.1, 1.1);
+        box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.25), -5px -5px 5px 5px rgba(0,0,0,0.22);
+    }
+    &-top {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 60%;
+        background: center no-repeat url('../../assets/weather/weather.svg');
+    }
+    &-bottom {
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30%;
+    }
+    &__title {
+        color: $Primary-Gray;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    &__date {
+        color: $Primary-Gray;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    &__location {
+        font-weight: 400;
+        font-size: 12px;
+        color: $Primary-Gray;
+    }
+}

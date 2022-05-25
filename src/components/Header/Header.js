@@ -5,6 +5,7 @@ import logo from '../../assets/images/logo.svg';
 
 export default function Header() {
     return (
+        <div className='header-wrapper'>
         <header className='header'>
             <Link to="/">
                 <img className='header__logo' src={logo} alt="Vertigo Network Logo"/>
@@ -15,5 +16,6 @@ export default function Header() {
                 </ul>
             </nav>             */}
         </header>
+        </div>
     );
 }

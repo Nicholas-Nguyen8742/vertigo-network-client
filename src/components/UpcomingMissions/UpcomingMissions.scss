@@ -5,6 +5,8 @@
 .upcomingMissions {
     width: 100%;
     margin-bottom: 3rem;
+    order: 1;
+    height: fit-content;
     &__title {
         margin-bottom: 1rem;
     }

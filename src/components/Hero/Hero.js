@@ -17,11 +17,11 @@ class Hero extends Component {
         minHeight: 300.00,
         minWidth: 100.00,
         scale: 2.00,
-        scaleMobile: 1.0,
+        scaleMobile: 2.00,
         color: 0xebc411,
         backgroundColor: 0x0,
         points: 20.00,
-        maxDistance: 25.00,
+        maxDistance: 15.00,
         spacing: 20.00
       })
     }
