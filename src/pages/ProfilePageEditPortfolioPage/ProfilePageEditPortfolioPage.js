@@ -40,11 +40,21 @@ export default class ProfilePageEditPortfolioPage extends Component {
             })
     }
 
+    // Empty String Validation
+    isEmpty = () => {
+        const { img, city, state, client, dateCompleted } = this.state;
+        if ( img || city || state || client || dateCompleted === "" ) {
+            return true;
+        }
+        return false;
+    }
+
     handleChange = (event) => {
         this.setState({
             [event.target.name]: event.target.value,
         });
     };
+
     // Handle PUT
     handlePut = (event) => {
         event.preventDefault();
@@ -57,7 +67,7 @@ export default class ProfilePageEditPortfolioPage extends Component {
             img
         })
             .then((response) => {
-                this.setState({ update: response.status, redirect: true }); console.log("yay");
+                this.setState({ update: response.status, redirect: true });
             });
     };
 
@@ -88,32 +98,36 @@ export default class ProfilePageEditPortfolioPage extends Component {
                                 value={this.state.client}
                                 label="Client"
                                 name="client"
-                            />
+                                />
                             <Input
                                 type="text"
                                 onChange={this.handleChange}
                                 value={this.state.dateCompleted}
                                 label="Date Completed"
-                                name="dateCompleted" />
+                                name="dateCompleted" 
+                                />
                             <Input
                                 type="text"
                                 onChange={this.handleChange}
                                 value={this.state.city}
                                 label="City"
-                                name="city" />
+                                name="city" 
+                                />
                             <Input
                                 type="text"
                                 onChange={this.handleChange}
                                 value={this.state.state}
                                 label="State"
-                                name="state" />
+                                name="state" 
+                                />
                             <Input
                                 type="text"
                                 onChange={this.handleChange}
                                 value={this.state.img}
                                 label="Image Link"
-                                name="img" />
-                            <button className='portfolio__cta' type="submit">submit</button>
+                                name="img" 
+                                />
+                            <button disabled={!this.isEmpty()} className='portfolio__cta' type="submit">submit</button>
                         </form>
                     </div>
                 </div>
