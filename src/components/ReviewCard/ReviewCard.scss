@@ -1,0 +1,58 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/typography' as *;
+
+.reviewCard {
+    display: flex;
+    flex-direction: column;
+    background-color: $Primary-White;
+    height: 12.5rem;
+    width: 10rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+        transform: scale(1.1, 1.1);
+        box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.25), -5px -5px 5px 5px rgba(0,0,0,0.22);
+    }
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0.5rem;
+        margin-top: .5rem;
+        align-items: center;
+    }
+    
+    &-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__quote {
+        height: 1rem;
+    }
+    &__body {
+        color: $Primary-Black;
+        font-size: 0.75rem;
+        margin: .5rem 1rem;
+        text-align: center;
+    }
+    &__author {
+        color: $Primary-Gray;
+        font-size: 1rem;
+        
+    }
+    &__company {
+        color: $Primary-Gray;
+        font-size: .75rem;
+    }
+    &__img {
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+        border: 0.5px solid $Primary-White;
+        padding: .25rem;
+    }
+}
