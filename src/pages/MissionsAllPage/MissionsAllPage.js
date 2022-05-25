@@ -7,7 +7,9 @@ import { API_URL } from '../../utils/API';
 
 export default class MissionsAllPage extends Component {
     state = {
-        allMissions: []
+        allMissions: [], 
+        filteredMissions: [], 
+        query: ''
     }
     
     componentDidMount() {
@@ -19,18 +21,33 @@ export default class MissionsAllPage extends Component {
                 })
             })
     }
+
+    componentDidUpdate(_prevProps, prevState) {
+        const incomingQuery = this.state.query;
+        if (incomingQuery !== '' && prevState.query !== incomingQuery) {
+            const search = this.state.allMissions.filter((mission) => mission.city.toLowerCase().includes(incomingQuery.toLowerCase()));
+        this.setState({
+            filteredMissions: search
+        });
+    }};
     
-    render(){
+    render() {
         const id = this.props.match.params.id;
-        const openMissions = this.state.allMissions;
+        const { allMissions, filteredMissions, query } = this.state;
+        const dataRender = query ? filteredMissions : allMissions;
+
         return (
             <main className='missionsAll-page'>
                     <NavBar id={id}/>
                     <div className='missionsAll-main'>
-                        <input type="search" id="" className="missionsAll__search"
+                        <input 
+                        type="search" 
+                        id="" 
+                        className="missionsAll__search"
+                        onChange={(e) => this.setState({ query: e.target.value})}
                         placeholder="Search..."/>
                         <div className='missionsAll-results'>
-                            {openMissions.map((item) => (
+                            {dataRender.map((item) => (
                                 <MissionCard 
                                     key={item.timestamp}
                                     firstName={item.firstName}
