@@ -1,6 +1,7 @@
 import './ProfileNav.scss';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function ProfileNav({ btn, id, display }) {
     return (
@@ -31,7 +32,9 @@ function ProfileNav({ btn, id, display }) {
                     </NavLink>
                 </li>
             </ul>
-            <button className='profile-nav__button' style={{display:`${display}`}}>Add to {btn}</button>
+            <Link to={`/dashboard/${id}/portfolio/add`}>
+                <button className='profile-nav__button' style={{display:`${display}`}}>Add to {btn}</button>
+            </Link>
         </nav>
     );
 }

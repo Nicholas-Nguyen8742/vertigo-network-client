@@ -14,6 +14,7 @@ import DashboardPage from './pages/DashboardPage/DashboardPage';
 // Pilot Profile Page Route
 import ProfilePage from './pages/ProfilePage/ProfilePage';
 import ProfilePageEditPortfolioPage from './pages/ProfilePageEditPortfolioPage/ProfilePageEditPortfolioPage';
+import ProfilePageAddPortfolioPage from './pages/ProfilePageAddPortfolioPage/ProfilePageAddPortfolioPage';
 
 import ProfileReviewsPage from './pages/ProfileReviewsPage/ProfileReviewsPage';
 import ProfilePastMissionsPage from './pages/ProfilePastMissionsPage/ProfilePastMissionsPage';
@@ -33,6 +34,7 @@ export default function App() {
         {/* Pilot Dashboard Route */}
         <Route path="/dashboard/:id" exact component={DashboardPage} />
         <Route path="/dashboard/:id/portfolio" exact component={ProfilePage} />
+        <Route path="/dashboard/:id/portfolio/add" exact component={ProfilePageAddPortfolioPage} />
         <Route path="/dashboard/:id/portfolio/:portfolioID/edit" exact component={ProfilePageEditPortfolioPage} />
         <Route path="/dashboard/:id/profile/reviews" exact component={ProfileReviewsPage} />
         <Route path="/dashboard/:id/profile/past-missions" exact component={ProfilePastMissionsPage} />
