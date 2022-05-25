@@ -17,6 +17,7 @@ export default class DashboardPage extends Component {
         current: {},
         forecast: []
     }
+    
     componentDidMount() {
         const token = sessionStorage.getItem('token');
 
