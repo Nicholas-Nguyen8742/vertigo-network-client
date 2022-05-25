@@ -35,7 +35,7 @@ export default function NavBar({id}) {
                 <NavLink 
                     activeClassName="navbar__item-active" 
                     className="navbar__item-inactive" 
-                    to={`/dashboard/${id}/profile`}
+                    to={`/dashboard/${id}/portfolio`}
                     id={id}>
                     <img className="navbar__icon-profile" src={profile} alt=''/>
                     <h4 className='navbar__text'>Profile</h4>

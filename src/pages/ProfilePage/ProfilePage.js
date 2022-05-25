@@ -34,6 +34,7 @@ export default class ProfilePage extends Component {
                     <div className='profile-portfolio'>
                         {portfolio.map((item) => (
                             <PortfolioCard
+                                id={item.id}
                                 key={item.timestamp}
                                 img={item.img}
                                 city={item.city}

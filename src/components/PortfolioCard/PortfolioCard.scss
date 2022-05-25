@@ -21,6 +21,9 @@
         height: 60%;
         background-position: center;
         object-fit: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
     }
     &-bottom {
@@ -29,6 +32,14 @@
         flex-direction: column;
         justify-content: space-between;
         height: 30%;
+    }
+    &__icon {
+        height: 1.5rem;
+        filter: opacity(.2);
+        &:hover {
+            filter: opacity(1);
+        }
+
     }
     &__title {
         color: $Primary-Gray;

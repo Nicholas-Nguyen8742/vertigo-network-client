@@ -29,7 +29,7 @@ export default function App() {
 
         {/* Pilot Dashboard Route */}
         <Route path="/dashboard/:id" exact component={DashboardPage} />
-        <Route path="/dashboard/:id/profile" exact component={ProfilePage} />
+        <Route path="/dashboard/:id/portfolio" exact component={ProfilePage} />
         <Route path="/dashboard/:id/profile/reviews" exact component={ProfileReviewsPage} />
         <Route path="/dashboard/:id/profile/past-missions" exact component={ProfilePastMissionsPage} />
         <Route path="/dashboard/:id/missions" exact component={MissionsPage} />

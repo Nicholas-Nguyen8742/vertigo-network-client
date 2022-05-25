@@ -1,11 +1,16 @@
 import './PortfolioCard.scss';
 import React from 'react';
+import DeletePortfolioCard from '../DeletePortfolioCard/DeletePortfolioCard';
 
-export default function PortfolioCard({ img, city, state, date, client }) {
+export default function PortfolioCard({ id, img, city, state, date, client }) {
     return (
         <article className='portfolioCard'>
             <div className='portfolioCard-top' style={{backgroundImage:`url(${img})`}}>
-                {/* <img className='portfolioCard__img' src={img} alt={`Images for ${client}`}/> */}
+                <DeletePortfolioCard 
+                    className='portfolioCard__icon-delete'
+                    key={id}
+                    id={id}
+                    name={`${city}, ${state}`}/>
             </div>
             <div className='portfolioCard-bottom'>
                 <h4 className='portfolioCard__title'>{client}</h4>

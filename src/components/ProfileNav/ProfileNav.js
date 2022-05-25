@@ -11,7 +11,7 @@ function ProfileNav({ btn, id, display }) {
                         exact={true} 
                         activeClassName="profile-nav__item-active" 
                         className="profile-nav__item-inactive"
-                        to={`/dashboard/${id}/profile`}>Portfolio
+                        to={`/dashboard/${id}/portfolio`}>Portfolio
                     </NavLink>
                 </li>
                 <li className='profile-nav__item'>
