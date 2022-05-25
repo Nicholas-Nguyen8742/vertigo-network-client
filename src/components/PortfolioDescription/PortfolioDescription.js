@@ -11,7 +11,7 @@ export default class PortfolioDescription extends Component {
                 </div>
                 <div className='portfolioDescription-bottom'>
                     <img className='portfolioDescription__img' alt="" src={profile} />
-                    <button className='portfolioDescription__btn'>Lorem ipsum</button>
+                    <button className='portfolioDescription__btn'>Edit Profile</button>
                     <p className='portfolioDescription__body'>Orlando Florida native who loves to explore nature, rock climb, and meet new people. I have been a drone photographer and videographer for over 10 years, with experience in weddings, real estate, commercial and private sectors.</p>
                 </div>
             </section>

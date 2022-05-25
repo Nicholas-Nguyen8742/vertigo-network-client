@@ -29,6 +29,10 @@
     &__btn {
         width: fit-content;
         margin-top: .5rem;
+        color: $Primary-White;
+        background-color: transparent;
+        border: none;
+        text-decoration: underline;
     }
     &__body {
         margin: 2rem 8rem;

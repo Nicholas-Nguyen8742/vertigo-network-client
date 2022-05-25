@@ -11,7 +11,7 @@ export default function NavBar({id}) {
     return (
         <nav className='navbar' id="mainNav">
             <img className='navbar__profile' src={profileImg} alt=""></img>
-            <h3 className='navbar__user'>Mike Lopez</h3>
+            <h3 className='navbar__user'>Nick Nguyen</h3>
             <ul className='navbar__list'>
                 <NavLink 
                     exact={true} 
