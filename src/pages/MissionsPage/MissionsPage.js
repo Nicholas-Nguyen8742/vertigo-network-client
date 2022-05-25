@@ -23,11 +23,12 @@ export default class MissionsPage extends Component {
 
     render() {
         const {allMissions} = this.state;
+        const id = this.props.match.params.id;
         return (
             <main className='missions-page'>
-                <NavBar />
+                <NavBar id={id} />
                 <div className='missions-main'>
-                    <AvailableMissions />
+                    <AvailableMissions id={id}/>
                     <MissionsMap missions={allMissions}/>
                 </div>
             </main>

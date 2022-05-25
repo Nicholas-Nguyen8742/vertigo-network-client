@@ -47,7 +47,7 @@ export default class AvailableMissions extends Component {
                         date={mission.date} />
 
                 ))}
-                <NavLink className='availableMissions__link' to="/missions/all">
+                <NavLink className='availableMissions__link' to={`/dashboard/${this.props.id}/missions/all`}>
                     <img className='availableMissions__link' src={chevron} alt='' />
                 </NavLink>
             </section>

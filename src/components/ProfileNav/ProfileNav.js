@@ -2,7 +2,7 @@ import './ProfileNav.scss';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-function ProfileNav({ btn }) {
+function ProfileNav({ btn, id }) {
     return (
         <nav className='profile-nav' id='profileNav'>
             <ul className='profile-nav__list'>
@@ -11,7 +11,7 @@ function ProfileNav({ btn }) {
                         exact={true} 
                         activeClassName="profile-nav__item-active" 
                         className="profile-nav__item-inactive"
-                        to="/profile">Portfolio
+                        to={`/dashboard/${id}/profile`}>Portfolio
                     </NavLink>
                 </li>
                 <li className='profile-nav__item'>
@@ -19,7 +19,7 @@ function ProfileNav({ btn }) {
                         exact={true} 
                         activeClassName="profile-nav__item-active" 
                         className="profile-nav__item-inactive"   
-                        to="/profile/reviews">Reviews
+                        to={`/dashboard/${id}/profile/reviews`}>Reviews
                     </NavLink>
                 </li>
             </ul>

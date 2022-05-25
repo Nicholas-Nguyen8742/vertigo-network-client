@@ -7,7 +7,7 @@ import profile from '../../assets/icons/profile_icon.png';
 import missions from '../../assets/icons/drone_icon.png';
 import logout from '../../assets/icons/logout_icon.png';
 
-export default function NavBar() {
+export default function NavBar({id}) {
     return (
         <nav className='navbar' id="mainNav">
             <img className='navbar__profile' src={profileImg} alt=""></img>
@@ -17,21 +17,24 @@ export default function NavBar() {
                     exact={true} 
                     activeClassName="navbar__item-active" 
                     className="navbar__item-inactive" 
-                    to='/dashboard'>
+                    to={`/dashboard/${id}`}
+                    id={id}>
                     <img className="navbar__icon-home" src={home} alt=''/>
                     <h4 className='navbar__text'>Dashboard</h4>
                 </NavLink>
                 <NavLink 
                     activeClassName="navbar__item-active" 
                     className="navbar__item-inactive" 
-                    to='/profile'>
+                    to={`/dashboard/${id}/profile`}
+                    id={id}>
                     <img className="navbar__icon-profile" src={profile} alt=''/>
                     <h4 className='navbar__text'>Profile</h4>
                 </NavLink> 
                 <NavLink 
                     activeClassName="navbar__item-active" 
                     className="navbar__item-inactive" 
-                    to='/missions'>
+                    to={`/dashboard/${id}/missions`}
+                    id={id}>
                     <img className="navbar__icon-drone" src={missions} alt=''/>
                     <h4 className='navbar__text'>Missions</h4>
                 </NavLink> 

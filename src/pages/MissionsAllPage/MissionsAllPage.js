@@ -21,11 +21,11 @@ export default class MissionsAllPage extends Component {
     }
     
     render(){
-        console.log(this.state.allMissions);
+        const id = this.props.match.params.id;
         const openMissions = this.state.allMissions;
         return (
             <main className='missionsAll-page'>
-                    <NavBar />
+                    <NavBar id={id}/>
                     <div className='missionsAll-main'>
                         <input type="search" id="" className="missionsAll__search"
                         placeholder="Search..."/>

@@ -90,7 +90,7 @@ export default class DashboardPage extends Component {
         }
         return (
             <main className='dashboard-page'>
-                <NavBar />
+                <NavBar id={this.state.user.id} />
                 <div className='dashboard-main'>
                     <UpcomingMissions />
                     <WeatherSection forecast={this.state.forecast} />

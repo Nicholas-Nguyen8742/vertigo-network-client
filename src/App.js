@@ -23,10 +23,10 @@ export default function App() {
         {/* <Route path="/portal/:id" exact component={PilotPortal} /> */}
 
         <Route path="/dashboard/:id" exact component={DashboardPage} />
-        <Route path="/profile" exact component={ProfilePage} />
-        <Route path="/profile/reviews" exact component={ProfileReviewsPage} />
-        <Route path="/missions" exact component={MissionsPage} />
-        <Route path="/missions/all" exact component={MissionsAllPage} />
+        <Route path="/dashboard/:id/profile" exact component={ProfilePage} />
+        <Route path="/dashboard/:id/profile/reviews" exact component={ProfileReviewsPage} />
+        <Route path="/dashboard/:id/missions" exact component={MissionsPage} />
+        <Route path="/dashboard/:id/missions/all" exact component={MissionsAllPage} />
       </Switch>
     </BrowserRouter>
   );

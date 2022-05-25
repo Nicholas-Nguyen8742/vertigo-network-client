@@ -9,14 +9,14 @@ export default class ProfilePage extends Component {
     state = {
 
     }
-    
     render() {
+        const id = this.props.match.params.id;
         return (
             <main className='profile-page'>
-                <NavBar />
+                <NavBar id={id}/>
                 <div className='profile-main'>
                     <PortfolioDescription />
-                    <ProfileNav btn="Portfolio" />
+                    <ProfileNav id={id} btn="Portfolio" />
                     <div className='profile-portfolio'>
                         <PortfolioCard />
                         <PortfolioCard />
