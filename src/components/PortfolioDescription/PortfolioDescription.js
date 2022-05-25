@@ -1,6 +1,6 @@
 import './PortfolioDescription.scss';
 import React, { Component } from 'react';
-import profile from "../../assets/images/IMG_8313.JPG"
+import profile from "../../assets/images/Nick.svg"
 
 export default class PortfolioDescription extends Component {
     render() {

@@ -1,7 +1,7 @@
 import './NavBar.scss';
 import React from 'react';
 import { NavLink,  Redirect } from 'react-router-dom';
-import profileImg from '../../assets/images/IMG_8313.JPG';
+import profileImg from '../../assets/images/Nick.svg';
 import home from '../../assets/icons/home_icon.png';
 import profile from '../../assets/icons/profile_icon.png';
 import missions from '../../assets/icons/drone_icon.png';

@@ -17,7 +17,10 @@
         height: auto;
     }
     &-top {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         background: url('../../assets/weather/weather.svg')  no-repeat center/100%;
+        background-size: cover;
         height: 11rem;
         position: relative;
     }
