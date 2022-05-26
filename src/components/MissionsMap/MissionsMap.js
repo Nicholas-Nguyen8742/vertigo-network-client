@@ -41,11 +41,11 @@ const MissionsMap = ({ missions }) => {
                         key={mission.timestamp}
                         position={[mission.latitude, mission.longitude]}>
                         <Popup position={[mission.longitude, mission.latitude]}>
-                            <div className="popup">
-                                <h2 className="popup__subheader">{mission.firstName + ' ' + mission.lastName}</h2>
-                                <p className="popup__title">{mission.specialty}</p>
-                                <p className="popup__body">{mission.email}</p>
-                                <p className="popup__body">{mission.city + ", " + mission.state}</p>
+                            <div className="Popup">
+                                <h2 className="Popup__subheader">{mission.firstName + ' ' + mission.lastName}</h2>
+                                <p className="Popup__title">{mission.specialty}</p>
+                                <p className="Popup__body">{mission.email}</p>
+                                <p className="Popup__body">{mission.city + ", " + mission.state}</p>
                             </div>
                         </Popup>
                     </Marker>

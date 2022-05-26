@@ -42,9 +42,11 @@ export default class AvailableMissions extends Component {
                         firstName={mission.firstName}
                         lastName={mission.lastName}
                         profile={mission.profile}
+                        specialty={mission.specialty}
                         city={mission.city}
                         state={mission.state}
-                        date={mission.date} />
+                        date={mission.date} 
+                        display='none'/>
 
                 ))}
                 <NavLink className='availableMissions__link' to={`/dashboard/${this.props.id}/missions/all`}>

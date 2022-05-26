@@ -53,9 +53,11 @@ export default class MissionsAllPage extends Component {
                                     firstName={item.firstName}
                                     lastName={item.lastName}
                                     profile={item.profile}
+                                    specialty={item.specialty}
                                     city={item.city}
                                     state={item.state}
-                                    date={item.date}/>
+                                    date={item.date}
+                                    display='none'/>
                             ))}    
                         </div>
                     </div>

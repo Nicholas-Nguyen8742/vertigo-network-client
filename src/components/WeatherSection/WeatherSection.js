@@ -3,7 +3,7 @@ import React from 'react';
 import sunny from '../../assets/weather/sunny.svg';
 import { epochConversion } from '../../utils/epochConversion';
 
-export default function WeatherSection({ forecast }) {
+export default function WeatherSection({ forecast, current }) {
     const d1 = epochConversion(forecast[0].date_epoch);
     const d2 = epochConversion(forecast[1].date_epoch);
     const d3 = epochConversion(forecast[2].date_epoch);
@@ -14,7 +14,7 @@ export default function WeatherSection({ forecast }) {
             <article className='weather__card'>
                 <div className='weather-top'>
                     <img className='weather__icon-top' src={sunny} alt='' />
-                    <span className='weather__temp-top'>86&deg;</span>
+                    <span className='weather__temp-top'>{current.feelslike_f}&deg;</span>
                     <h2 className='weather__location'>Orlando, FL</h2>
                 </div>
                 <div className='weather-bottom'>

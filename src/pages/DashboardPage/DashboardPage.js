@@ -51,7 +51,6 @@ export default class DashboardPage extends Component {
             const data = await getWeather(this.state.city);
 
             const response =  data;
-            console.log(response);
             this.setState({
                 location: response.data.location, 
                 current: response.data.current, 
@@ -86,7 +85,7 @@ export default class DashboardPage extends Component {
                 <NavBar id={this.state.user.id} />
                 <div className='dashboard-main'>
                     <UpcomingMissions pilotID={this.state.user.id}/>
-                    <WeatherSection forecast={this.state.forecast} />
+                    <WeatherSection current={this.state.current} forecast={this.state.forecast} />
                     <PendingMissions pilotID={this.state.user.id}/>
                 </div>
             </main>

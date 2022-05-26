@@ -19,7 +19,7 @@
     margin: 0;
 }
 
-.popup {
+.Popup {
     background-color:  #FFFFFF;
     margin: 0;
     &__subheader {
@@ -28,7 +28,9 @@
     &__title {
       background-color: #FFFFFF;
       margin: 0;
-      font-weight: 700;
+      font-weight: 400;
+      font-size: 1rem;
+      font-style: italic;
     }
     &__body {
       background-color: #FFFFFF;
