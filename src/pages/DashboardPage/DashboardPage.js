@@ -87,7 +87,7 @@ export default class DashboardPage extends Component {
                 <div className='dashboard-main'>
                     <UpcomingMissions pilotID={this.state.user.id}/>
                     <WeatherSection forecast={this.state.forecast} />
-                    <PendingMissions />
+                    <PendingMissions pilotID={this.state.user.id}/>
                 </div>
             </main>
         );

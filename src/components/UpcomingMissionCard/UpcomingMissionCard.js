@@ -11,7 +11,7 @@ export default function MissionCard({ firstName, lastName, specialty, city, stat
                 <p className='missionCard__body1'>Aerial Photography</p>
                 <div className='missionCard-bottom'>
                     <h5 className='missionCard__location'>{city}, FL</h5>
-                    <h5 className='missionCard__date'>{date}</h5>
+                    <h5 className='missionCard__date'>June 2022</h5>
                 </div>
             </div>
         </article>
