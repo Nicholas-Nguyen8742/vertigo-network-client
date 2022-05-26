@@ -5,7 +5,7 @@
 .navbar {
     position: fixed;
     padding: 3rem 1.5rem;
-    width: 16rem;
+    width: 17rem;
     background-color: $Secondary-Black;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
     border-radius: 0px 20px 20px 0px;
@@ -24,6 +24,7 @@
     }
     &__user {
         padding: 0.5rem;
+        padding-bottom: 5rem;
     }
     &__list {
         list-style: none;
@@ -31,6 +32,9 @@
         flex-direction: column;
         align-self: flex-start;
         width: 100%;
+    }
+    &__text-missions {
+        margin-left: 2.75rem;
     }
 
 
@@ -84,8 +88,10 @@
             margin-right: 1.3rem;
         }
         &-drone {
+            position: absolute;
+            left: 1.5555rem;
             height: 2.25rem;
-            margin-right: 0.5rem;
+            margin-right: .75rem;
         }
         &-logout {
             height: 2.25rem;

@@ -46,7 +46,7 @@ export default function NavBar({id}) {
                     to={`/dashboard/${id}/missions`}
                     id={id}>
                     <img className="navbar__icon-drone" src={missions} alt=''/>
-                    <h4 className='navbar__text'>Missions</h4>
+                    <h4 className='navbar__text-missions'>Missions</h4>
                 </NavLink> 
             </ul>
             <button className='navbar__logout' onClick={handleLogout}>
