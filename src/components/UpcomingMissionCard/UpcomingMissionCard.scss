@@ -8,4 +8,12 @@
         font-size: 12px;
         font-weight: 500;
     }
+    &-bottom {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-right {
+        width: 100%;
+    }
 }

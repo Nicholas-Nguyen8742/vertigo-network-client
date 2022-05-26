@@ -5,23 +5,43 @@ import axios from "axios";
 import UpcomingMissionCard from '../UpcomingMissionCard/UpcomingMissionCard';
 
 export default class UpcomingMissions extends Component {
+    state = {
+        allMissions: [],
+    }
+
     componentDidMount() {
-        axios.get(`${API_URL}/missions`)
+        const { pilotID } = this.props;
+        axios.get(`${API_URL}/pilots/${pilotID}/applications`)
         .then((res) => {
-            console.log(res.data);
+            const data = res.data;
+            // Gets first three open missions
+            const filteredMissions = data.filter(mission => mission.status === 'open');
+            const firstThree = filteredMissions.slice(0,3);
             this.setState({
-                allMissions: res.data
+                allMissions: firstThree
             })
         })
 }
     render() {
+        const{allMissions} = this.state;
     return (
         <section className='upcomingMissions'>
             <h2 className='upcomingMissions__title'>Upcoming Missions</h2>
             <div className='cardList'>
-                <UpcomingMissionCard />
-                <UpcomingMissionCard />
-                <UpcomingMissionCard />
+                {allMissions.map(mission =>(
+                    <UpcomingMissionCard 
+                        key={mission.id}
+                        firstName={mission.firstName}
+                        lastName={mission.lastName}
+                        date={mission.date}
+                        specialty={mission.specialty}
+                        profile={mission.profile}
+                        city={mission.city}
+                        state={mission.state}    
+                    />
+
+                ))}
+
             </div>
         </section>
     );
