@@ -17,7 +17,7 @@ export default class PendingMissions extends Component {
             const data = res.data;
             // Gets first three open missions
             const filteredMissions = data.filter(mission => mission.status === 'pending');
-            const firstThree = filteredMissions.slice(0,3);
+            const firstThree = filteredMissions.slice(-3);
             console.log(firstThree)
             this.setState({
                 allMissions: firstThree

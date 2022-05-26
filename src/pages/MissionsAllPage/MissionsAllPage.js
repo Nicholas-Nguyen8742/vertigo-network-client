@@ -15,7 +15,6 @@ export default class MissionsAllPage extends Component {
     componentDidMount() {
         axios.get(`${API_URL}/missions`)
             .then((res) => {
-                console.log(res.data);
                 this.setState({
                     allMissions: res.data
                 })
@@ -32,10 +31,10 @@ export default class MissionsAllPage extends Component {
     }};
     
     render() {
+        console.log(this.state.allMissions);
         const id = this.props.match.params.id;
         const { allMissions, filteredMissions, query } = this.state;
         const dataRender = query ? filteredMissions : allMissions;
-
         return (
             <main className='missionsAll-page'>
                     <NavBar id={id}/>
@@ -50,6 +49,7 @@ export default class MissionsAllPage extends Component {
                             {dataRender.map((item) => (
                                 <MissionCard 
                                     key={item.timestamp}
+                                    pilotID={id}
                                     firstName={item.firstName}
                                     lastName={item.lastName}
                                     profile={item.profile}
@@ -57,6 +57,7 @@ export default class MissionsAllPage extends Component {
                                     city={item.city}
                                     state={item.state}
                                     date={item.date}
+                                    missionID={item.id}
                                     display='none'/>
                             ))}    
                         </div>

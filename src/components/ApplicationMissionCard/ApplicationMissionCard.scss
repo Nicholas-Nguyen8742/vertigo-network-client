@@ -1,0 +1,39 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/typography' as *;
+
+.p__icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2rem;
+    width: 2rem;
+    filter: opacity(.2);
+    &:hover {
+        filter: opacity(1);
+    }
+}
+
+.p__button-apply {
+    @include label-buttons-mobile;
+    color: $Primary-Gray;
+    background-color: $Primary-Yellow;
+    height: 2.25rem;
+    padding: 0.425rem 1rem 0.825rem 1rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid $Primary-Gray;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    &:hover {
+        color: $Primary-White;
+        border-color: $Primary-Black;
+        background-color: $Primary-Gray;
+    }
+    @include tablet {
+        @include label-buttons-desktop;
+        width: auto;
+        height: 2.375rem;
+    }
+}

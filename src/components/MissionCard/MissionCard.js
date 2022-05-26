@@ -1,8 +1,8 @@
 import './MissionCard.scss';
 import React from 'react';
-// import profile from '../../assets/images/IMG_8313.JPG';
+import ApplicationMissionCard from '../ApplicationMissionCard/ApplicationMissionCard';
 
-export default function MissionCard({firstName, lastName, profile, date, city, status, specialty, display, color }) {
+export default function MissionCard({missionID, pilotID, firstName, lastName, profile, date, city, status, specialty, display, color }) {
     return (
         <article className='missionCard'>
             <img className='missionCard__img' src={profile} alt=''/>
@@ -15,6 +15,9 @@ export default function MissionCard({firstName, lastName, profile, date, city, s
                 <div className='missionCard-bottom'>
                     <h5 className='missionCard__location'>{city}, FL</h5>
                 </div>
+                <ApplicationMissionCard 
+                    missionID={missionID}
+                    pilotID={pilotID}/>
             </div>
         </article>
     );
