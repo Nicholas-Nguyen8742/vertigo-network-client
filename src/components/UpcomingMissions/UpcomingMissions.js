@@ -14,10 +14,10 @@ export default class UpcomingMissions extends Component {
         axios.get(`${API_URL}/pilots/${pilotID}/applications`)
             .then((res) => {
                 const data = res.data;
+                
                 // Gets first three open missions
                 const filteredMissions = data.filter(mission => mission.status === 'accepted');
                 const firstThree = filteredMissions.slice(3, 6);
-                console.log(firstThree);
                 this.setState({
                     allMissions: firstThree
                 })
