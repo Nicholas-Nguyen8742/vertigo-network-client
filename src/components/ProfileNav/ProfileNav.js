@@ -20,7 +20,7 @@ function ProfileNav({ btn, id, display }) {
                         exact={true} 
                         activeClassName="profile-nav__item-active" 
                         className="profile-nav__item-inactive"   
-                        to={`/dashboard/${id}/profile/reviews`}>Reviews
+                        to={`/dashboard/${id}/portfolio/reviews`}>Reviews
                     </NavLink>
                 </li>
                 <li className='profile-nav__item'>
@@ -28,7 +28,7 @@ function ProfileNav({ btn, id, display }) {
                         exact={true} 
                         activeClassName="profile-nav__item-active" 
                         className="profile-nav__item-inactive"   
-                        to={`/dashboard/${id}/profile/past-missions`}>Past Missions
+                        to={`/dashboard/${id}/portfolio/past-missions`}>Past Missions
                     </NavLink>
                 </li>
             </ul>

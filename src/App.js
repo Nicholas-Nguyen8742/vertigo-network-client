@@ -2,7 +2,7 @@ import './styles/App.scss';
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
-import HomePage from './pages/HomePage/HomePage';
+// import HomePage from './pages/HomePage/HomePage';
 // import Portal from './pages/Portal/Portal';
 
 // Auth Routes
@@ -26,7 +26,7 @@ export default function App() {
     <BrowserRouter>
       <Header />
       <Switch>
-        <Route path="/" exact component={HomePage} />
+        {/* <Route path="/" exact component={HomePage} /> */}
         <Route path="/signup" exact component={SignUpPage} />
         <Route path="/login" exact component={LoginPage} />
         {/* <Route path="/portal/:id" exact component={PilotPortal} /> */}
@@ -36,8 +36,8 @@ export default function App() {
         <Route path="/dashboard/:id/portfolio" exact component={ProfilePage} />
         <Route path="/dashboard/:id/portfolio/add" exact component={ProfilePageAddPortfolioPage} />
         <Route path="/dashboard/:id/portfolio/:portfolioID/edit" exact component={ProfilePageEditPortfolioPage} />
-        <Route path="/dashboard/:id/profile/reviews" exact component={ProfileReviewsPage} />
-        <Route path="/dashboard/:id/profile/past-missions" exact component={ProfilePastMissionsPage} />
+        <Route path="/dashboard/:id/portfolio/reviews" exact component={ProfileReviewsPage} />
+        <Route path="/dashboard/:id/portfolio/past-missions" exact component={ProfilePastMissionsPage} />
         <Route path="/dashboard/:id/missions" exact component={MissionsPage} />
         <Route path="/dashboard/:id/missions/all" exact component={MissionsAllPage} />
       </Switch>
