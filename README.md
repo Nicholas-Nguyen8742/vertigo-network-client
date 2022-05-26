@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Vertigo Network
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://user-images.githubusercontent.com/97898047/170509950-e52b60c7-fd65-46f5-8e8f-959bf6a3e8ef.png" />
+  </a>
+</p>
+Drone pilots are becoming more popularized in every realm of industry whether it range from real estate business to insurance claims to even something as small as wedding events. 
+The point of this application is to be able to be a platform that is more user centric towards pilots by being able to connect them directly with clients and to grow their own brand and image. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Built with: 
+### Front-End
+[![My Skills](https://skillicons.dev/icons?i=react,js,sass )]([https://skillicons.dev](https://reactjs.org/)(https://developer.mozilla.org/en-US/docs/Web/JavaScript)(https://sass-lang.com/documentation))
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Back-End
+[![My Skills](https://skillicons.dev/icons?i=express,mysql,nodejs)](https://skillicons.dev)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Libaries
+* [React-Leaflet](https://react-leaflet.js.org)
+* [React-Icons](https://react-icons.github.io/react-icons/)
+* [ReactJS-Popup](https://www.npmjs.com/package/reactjs-popup)
+* [React-Router-Dom](https://v5.reactrouter.com/web/guides/quick-start)
+* [Knex](http://knexjs.org/)
+* [JWT](https://jwt.io/)
+* [bcryptJS](https://www.npmjs.com/package/bcryptjs)
 
-### `npm test`
+## Database Entity-Relationship-Diagram
+![Database ER diagram (crow's foot)](https://user-images.githubusercontent.com/97898047/170516798-7666691c-ef78-44b1-a84a-2ddef01d42f6.svg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Run Locally
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Vertigo Network Client
+Clone the project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  git clone https://github.com/Nicholas-Nguyen8742/vertigo-network-client
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Go to the project directory
 
-### `npm run eject`
+```bash
+  cd vertigo-network-client
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Vertigo Network Server
+Clone the project
 
-## Learn More
+```bash
+  git clone https://github.com/Nicholas-Nguyen8742/vertigo-network-server
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Go to the project directory
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  cd vertigo-network-server
+```
 
-### Code Splitting
+Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+  npm install
+```
 
-### Analyzing the Bundle Size
+Run knex migrations & seeds to setup & populate the mySQL server.
+```bash
+    npx knex migrate:latest
+    npx knex seed:run
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Run the script on vertigo-network-server terminal.
+```bash
+    node index.js
+```
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## ScreenShots
+![image](https://user-images.githubusercontent.com/97898047/170506731-245df590-d6ab-4189-8f63-077132f5ef50.png)
+![image](https://user-images.githubusercontent.com/97898047/170508070-9b84d3af-b9a1-466f-99a1-e8bccd0dac07.png)
+![image](https://user-images.githubusercontent.com/97898047/170508143-1e52d0a8-34ac-4c7e-b4a6-88bf212f93dd.png)
+![image](https://user-images.githubusercontent.com/97898047/170508772-8b8f7602-b812-4120-989f-2f3a7aa42a33.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Down the Road
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Integrating React Context & Private Routes for types of users
+- Integrate Client user dashboard routes. 
+- Implement more CRUD Operations on the Front-End
+- Back-End Points need more concise querying
