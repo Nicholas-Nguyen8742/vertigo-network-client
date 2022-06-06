@@ -9,10 +9,8 @@ export default class SignUpForm extends Component {
     state = {
         firstName: "",
         lastName: "",
-        city: "",
-        state: "",
         email: "",
-        type: '',
+        position: '',
         password: "",
         confirmPassword: "",
         error: "",

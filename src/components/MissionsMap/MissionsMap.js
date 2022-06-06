@@ -8,7 +8,6 @@ import DarkMapBtn from '../DarkMapBtn/DarkMapBtn';
 
 
 const MissionsMap = ({ missions }) => {
-    console.log(missions);
     const state = { center: { lat: 28.5384, lng: -81.3789 } };
     const [colorMode, setColorMode] = useState("light");
 

@@ -20,6 +20,7 @@
         margin-bottom: 1rem;
         width: 100%;
         border-radius: 4px;
+        border: 2px solid rgba($Secondary-Black, $alpha: 0.12);
         &::placeholder {
             color: rgba($Secondary-Gray, $alpha: 0.8);
         }
